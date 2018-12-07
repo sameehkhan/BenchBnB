@@ -3,5 +3,6 @@ class Api::SessionsController < ApplicationController
   end
 
   def destroy
+    render json: {}
   end
 end
