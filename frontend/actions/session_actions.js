@@ -24,8 +24,8 @@ export const login = user => (dispatch) => (
     .then(currentUser => dispatch(receiveCurrentUser(currentUser)))
 );
 
-export const logout = user => (dispatch) => (
-  APIUtil.deleteSession(user)
+export const logout = () => (dispatch) => (
+  APIUtil.deleteSession()
     .then(currentUser => dispatch(logoutCurrentUser()))
 );
 
